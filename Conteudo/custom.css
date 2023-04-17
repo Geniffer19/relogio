@@ -1,0 +1,60 @@
+/*fonte importada do google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;1,400&display=swap');
+
+*{ /* Estilo da página*/
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body{ /*Estilo do que contém dentro da pagina (conteudo)*/
+    height: 100vh;  /*Largura*/
+    background: linear-gradient(170deg, rgb(20, 20, 20), rgb(10, 10, 10)); 
+    /*Fundo com 2 cores e posicionamento das cores*/
+    display: flex; /*Display*/
+    align-items: center; /* Alinhamento dos itens ao centro */
+    justify-content: center; /* Alinhamento Justificado ao Centro*/
+}
+
+    
+.relogio{ /* classe */
+    /* Display flex, com os itens alinhados ao centro com espaço uniforme com uma largura de 200px e altura de 550px
+    com um fundo transparente, com uma borda de 5px e uma sombra preta */
+    display: flex; 
+    align-items: center; 
+    justify-content: space-around;
+    height: 200px;
+    width: 550px;
+    background: transparent;
+    border-radius: 5px;
+    box-shadow: 0px, 8px, 10px rgb(5, 5, 5);
+    
+}
+
+.relogio div{ /* classe com a tag div */
+    /* Largura de 170px com uma altura de 150px, display flex com colunas, itens alinhados e justificados
+     ao centro com a cor da letra vemelha, fundo preto, uma sombra vermelha com uma borda de 7px e especo de 3px*/
+    height: 170px; 
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #ff0505;
+    background: rgb(0, 0, .5);
+    box-shadow: 15px 20px 25px rgb(255, 1, 1);
+    border-radius: 7px;
+    letter-spacing: 3px;
+    
+}
+
+.relogio span{ /* classe com a tag span */
+    /* Fonte de 60px em negrito */
+    font-weight: bolder;
+    font-size: 60px;
+}
+
+.relogio span.tempo{ /* classe com a tag span e classe tempo */
+    /* Fonte de 10 px */
+    font-size: 10px;
+}
